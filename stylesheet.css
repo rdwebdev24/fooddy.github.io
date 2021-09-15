@@ -1,0 +1,194 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+
+body{
+     
+     background-image: url('./food4.jpeg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+#heading{
+     background-image: linear-gradient(#4145cc,#da47cf);
+     width: 58%;
+     opacity: 0.8;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 2.5rem;
+     color: yellow;
+     text-shadow: 3px 3px 3px green;
+     text-align: center;
+     margin-top: 70px;
+     border-radius: 10px;
+     margin-bottom: -25px;
+     margin-left: auto;
+     margin-right: auto;
+}
+.container{
+     background-image: linear-gradient(#8e6464 , #adad80);
+     opacity: 0.9;
+     margin: 100px auto;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+     width: 58%;
+     
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 1.3rem;
+     color: red;
+     text-shadow: 3px 1px 2px yellow;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 510;
+ 
+
+}
+
+
+
+/* ************ user detail styling *************** */
+
+.container .user_detail{
+     margin: 30px;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+.container .user_detail input{
+     margin: 0px 7px;
+     padding:7px;
+     border-radius: 5px;
+     outline: none;
+     border-top: none;
+     border-left: none;
+     transition: all 0s ease;
+}
+.container .user_detail input:hover{
+    border: 2px solid red;
+}
+.container .user_detail label{
+     margin: 0px 5px;
+     padding-bottom: 3px;
+}
+/* ************* delievery styling ************** */
+
+ .container .delievery{
+     margin: 30px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+}
+ 
+ .container .delievery input{
+     margin: 0px 7px;
+     margin-bottom: 26px;
+     padding:7px;
+     border-radius: 5px;
+     outline: none;
+     border-top: none;
+     border-left: none;
+     transition: all 0s ease;
+}
+ 
+ .container .delievery input:hover , .container .delievery textarea:hover{
+     border: 2px solid red;
+}
+ .container .delievery label{
+     margin: 0px 5px;
+     padding-bottom: 3px;  
+    
+}
+
+.container .delievery textarea{
+     border-radius: 5px;
+}
+
+/* *********** order styling ***************** */
+.order{
+     max-width: 50%;
+     background-image: linear-gradient(#8e6464 , #adad80);
+     opacity: 0.8;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     margin: 100px auto;
+     border-radius: 5px;
+}
+
+.order h2{
+     color: blue;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 2rem;
+     font-weight: bolder;
+     margin:10px;
+     text-shadow: 2px 2px 2px yellow;    
+     padding: 8px;
+}
+
+.order .table2{
+     margin-bottom: 17px;
+}
+/* *********** button styling ************* */
+.button{
+     display: flex;
+     justify-content: center;
+}
+
+.button .btn{
+     background-color: #8e6464;
+     border: none;
+     border-style:outset;
+     text-shadow: 1px 1px 2px blue;
+     text-decoration: none;
+     padding: 10px;
+     border-radius: 15px;
+     transition: all 0.1s ease-in-out;
+}
+.button .btn a{
+     font-size: 18px;
+     color:white;
+     text-decoration: none;
+     font-weight: bold;
+
+     
+}
+
+.button .btn:hover{
+     /* color:red; */
+     font-weight: bolder;
+     font-size: 19px;
+     background-color: rgb(179, 179, 179);
+     cursor: pointer;
+     text-decoration: none;
+      
+}
+.button .btn a:hover{
+     color: red;      
+}
+.button :last-child{
+     margin-bottom: 30px;
+}
+
+
+
+
+
+
+@media (max-width:768px){
+
+     .container{
+          display: flex;
+          flex-direction: column;
+     }
+
+     .order table{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+}
