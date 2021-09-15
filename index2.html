@@ -12,34 +12,49 @@
                padding: 0px;
                margin: 0px;
           }
-          body{
+           body{
                background-image: url('./food2.jpeg');
                background-repeat: no-repeat;
                background-size: cover;
+               margin-top: 282px;
+               margin-right: 56px;
+               text-align: center;
           }
           
-          h2{
+          .box{
                font-family: 'Lobster', cursive;
                color: white;
                font-size: 50px;
-               text-align: center;
-               margin-top: 283px;
-               margin-bottom: 8px;
-               margin-right: 64px;
-          }
+       }
           p{
-               font-family: 'Lobster', cursive;
-               color: white;
                font-size: 25px;
-               text-align: center;
-               margin-right: 64px;
           }
+         @media (min-width:300px) and (max-width:700px){
+               body{
+               height:400px;
+                    margin-left: auto;
+               }
+               .box{
+                    margin-left: 60px;
+                    font-size: 1.4rem;
+               }
+         }
+         @media (min-width:700px) and (max-width:2000px){
+               body{
+               height:386px;
+                    margin-left: auto;
+               }
+               .box{
+                    font-size: 1.8rem;
+
+               }
+         }
 
      </style>
 </head>
 
 <body>
-     <div>
+     <div class="box">
      <h2>ORDER PLACED</h2>
      <p>Thank you for odering</p>
 </div>
